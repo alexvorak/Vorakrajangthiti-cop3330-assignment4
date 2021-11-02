@@ -1,0 +1,89 @@
+@startuml
+
+class ToDoList
+{
++main(String[])
++int MenuItems
++NewToDoListOptions
++RemoveExistingList
++EditTitle
++AddNewItem
++RemoveItem
++EditDescription
++EditDate
++MarkAsComplete
++DisplayAll
++DisplayIncomplete
++DisplayComplete
++WriteItemsToFile
++LoadFile
++LoadFileItems
++LoadAll
+}
+class NewToDoListOptions
+{
++ ToDoList: string
++ ItemDescription: string
++ DueDate: string
+}
+class RemoveExistingList
+{
++ RemoveItem: int
+}
+class EditTitle
+{
++ EditList: int
+}
+class AddNewItem
+{
++ EditList2: int
++ NewItems2: string
+}
+class RemoveItem
+{
++ EditList3: int
+}
+class EditDescription
+{
++ EditList4: int
++ Description: string
+}
+class EditDate
+{
++ EditList5 : int
++ date: string
+}
+class MarkAsComplete
+{
++ EditList6: int
+}
+class DisplayAll
+{
++ display: string
+}
+class DisplayIncomplete
+{
++ Print
+}
+class DisplayComplete
+{
++ Print
+}
+class WriteItemsToFile
+{
++ listnumber: string
+}
+class LoadFile
+{
++ filepath: string
+}
+class LoadFileItems
+{
++ filepath2: string
+}
+class LoadAll
+{
++ filepath3: string
+}
+@enduml
+
